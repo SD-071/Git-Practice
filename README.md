@@ -34,6 +34,9 @@ This should show the address of the repository in github:
 
     git checkout -b dev
 
+You will see something like this in your teminal:
+![alt text](./assets/02_create_local_dev.png)
+
 #### 3️⃣ Pull the origin/dev branch to your local branch
 
     git pull origin dev
