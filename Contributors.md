@@ -23,7 +23,7 @@
 ![alt text](./assets/03_Time-to-hike.png)
 </details>
 <details>
-<summary>Ernest</summary>
+<summary>Ernest - <a href="https://github.com/Midoyan">GitHub account</a></summary>
 
 - Feature Statistics section - feature/Statistics
 
