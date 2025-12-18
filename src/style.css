@@ -1,0 +1,11 @@
+#our-team {
+  background-color: #f9f9f9;
+  color: darkred;
+  padding: 20px;
+  text-align: center;
+}
+#our-team h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  margin-bottom: 20px;
+}
