@@ -10,7 +10,50 @@
 /* Navbar-Hero end */
 
 /* Our-Team start */
-
+.our-team {
+  background-color: #fff9ec;
+  color: hwb(325 31% 40%);
+  padding: 10px;
+  text-align: center;
+  font-family: 'Avenir', sans-serif;
+}
+.our-team h2 {
+  color: hwb(325 31% 40%);
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+.team-members {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.team-members figure {
+  margin: 10px;
+}
+.team-members img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+.team-members h3 {
+  margin-top: 10px;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+figcaption {
+  color: hwb(325 31% 40%);
+  font-size: 0.8em;
+  max-width: 200px;
+}
+.team-members p {
+  margin-bottom: 20px;
+}
+.our-team p {
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
 /* Our-Team end */
 
 /* Time-to-hike start */
