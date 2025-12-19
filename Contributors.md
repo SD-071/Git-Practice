@@ -16,7 +16,7 @@
 ![alt text](./assets/02_Our-Team.png)
 </details>
 <details>
-<summary>Dovydas</summary>
+<summary>Dovydas - <a href="https://github.com/dovydassau">GitHub</a></summary>
 
 - Feature time to hike section - feature/Time-to-hike
 
