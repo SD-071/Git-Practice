@@ -144,6 +144,116 @@ Once you have pushed your changes, you can go to the GitHub repository and see y
 
 ## Day 2 - Protecting Branches and PRs
 ### Instructions
+<details>
+<summary>Step 1 - Creating a Pull Request</summary>
+
+#### 1️⃣ Go to the GitHub repository in your web browser
+
+#### 2️⃣ You will see a notification about your recently pushed branch. Click on the "Compare & pull request" button.
+- If you don't see the notification, you can go to the "Pull requests" tab and click on the "New pull request" button.
+
+![alt text](./assets/07_compare_and_pr.png)
+
+#### 3️⃣ Set the base to dev and the compare to your feature branch
+
+![alt text](./assets/08_set_base_and_compare.png)
+
+#### 4️⃣ Fill in the title and description for your pull request
+
+![alt text](./assets/09_fill_pr_details.png)
+
+#### 5️⃣ Click on the "Create pull request" button
+
+![alt text](./assets/10_create_pr.png)
+
+This will create a pull request from your feature branch to the dev branch.
+
+#### 6️⃣ Notify your teammates to review the pull request
+- you can send the link of the PR via slack or any other communication tool you use
+</details>
+
+<details>
+<summary>Step 2 - Reviewing a Pull Request</summary>
+
+#### 1️⃣ Go to the "Pull requests" tab in the GitHub repository
+
+#### 2️⃣ Click on the pull request created by one of your teammates
+
+![alt text](./assets/11_open_pr.png)
+
+Alternatively, you can go to the PR through the link shared by your teammate.
+
+#### 3️⃣ Review the changes made in the pull request:
+
+- Create a local copy of the branch to review from the local dev.
+
+        git checkout dev
+        git pull origin dev
+        git checkout -b review/<feature-to-review>
+
+- Pull the feature branch to your local review branch.
+
+        git pull origin feature/<feature-to-review>
+
+- Resolve any merge conflicts if there are any.
+
+- Review the code changes in your code editor (is everything working as expected? Are there any bugs? Is the code clean and well-structured?)
+
+#### 4️⃣ After the review is done, go to the "Files changed" tab to see the changes made in the pull request
+- Approve the changes by clicking on the "Review changes" button and selecting "Approve" if all looks good
+
+![alt text](./assets/12_approve_pr.png)
+
+- Request changes by clicking on the "Review changes" button and selecting "Request changes" if there are issues that need to be addressed
+
+![alt text](./assets/13_request_changes_pr.png)
+
+#### 5️⃣ Once the PR has all the approvals, let your teammate know they can merge the pull request
+</details>
+
+<details>
+<summary>Merging a Pull Request</summary>
+
+#### 1️⃣ If everything looks good and there are no merge conflicts:
+
+- Click on the "Merge pull request" button
+
+![alt text](./assets/14_merge_pr.png)
+
+- Confirm the merge by clicking on the "Confirm merge" button
+
+![alt text](./assets/15_confirm_merge.png)
+
+- Delete the origin feature branch by clicking on the "Delete branch" button
+
+- Delete the local feature branch:
+
+        git branch -d feature/<feature-to-implement>
+
+- Update your local dev branch:
+
+        git checkout dev
+        git pull origin dev
+
+- Update any other local feature branches:
+
+        git checkout feature/<feature-to-implement>
+        git pull origin dev
+
+#### 2️⃣ If there are merge conflicts:
+- Resolve the merge conflicts locally in your code editor
+
+- Stage, commit, and push the changes to the feature branch
+
+- Go back to the pull request in GitHub and verify that the merge conflicts have been resolved
+
+- Proceed with the merging steps as described above
+
+#### 3️⃣ Let your teammate know that the feature branch has been merged and deleted so they can also delete their local feature branch and update their local dev branch
+
+![alt text](./assets/16_delete_branch.png)
+
+</details>
 
 ## Day 3 - Merging Branches Locally
 ### Instructions
