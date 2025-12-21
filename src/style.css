@@ -18,7 +18,57 @@
 /* Time-to-hike end */
 
 /* Statistics start */
+.statistics {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #A95F73;
+    text-align: center;
+    background-color: #fff9ec;
+    padding: 25px 0;
+}
+.statistics h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
 
+.statistics h1 + p {
+    font-size: 1em;
+    width: 400px;
+    margin-bottom: 40px;
+}
+
+.statistics-numbers {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style-type: none;
+
+    li {
+        border: 3px solid #A95F73;
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+
+        p {
+            font-size: 1.4em;
+            font-weight: 700;
+        }
+
+        span {
+            display: block;
+            font-size: 1.8em;
+
+        }
+    }
+}
 /* Statistics end */
 
 /* Tour-Guide start */
