@@ -19,7 +19,7 @@
 <summary>Dovydas</summary>
 
 - Feature time to hike section - feature/Time-to-hike
-  
+
 ![alt text](./assets/03_Time-to-hike.png)
 </details>
 <details>
